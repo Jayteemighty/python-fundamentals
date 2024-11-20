@@ -11,7 +11,7 @@ This repository is dedicated to refreshing my knowledge on Python. As I go throu
 - [x] Booleans
 
 ### 2. **Control Flow**
-- [ ] If-else Statements
+- [x] If-else Statements
 - [ ] For Loops
 - [ ] While Loops
 
