@@ -5,10 +5,10 @@ This repository is dedicated to refreshing my knowledge on Python. As I go throu
 ## Topics to Learn
 
 ### 1. **Variables and Data Types**
-- [ * ] Integers
-- [ * ] Floats
-- [ * ] Strings
-- [ * ] Booleans
+- [x] Integers
+- [x] Floats
+- [x] Strings
+- [x] Booleans
 
 ### 2. **Control Flow**
 - [ ] If-else Statements
