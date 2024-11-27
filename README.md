@@ -12,7 +12,7 @@ This repository is dedicated to refreshing my knowledge on Python. As I go throu
 
 ### 2. **Control Flow**
 - [x] If-else Statements
-- [ ] For Loops
+- [x] For Loops
 - [ ] While Loops
 
 ### 3. **Functions**
