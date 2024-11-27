@@ -16,8 +16,8 @@ This repository is dedicated to refreshing my knowledge on Python. As I go throu
 - [x] While Loops
 
 ### 3. **Functions**
-- [ ] Defining Functions
-- [ ] Function Arguments and Return Values
+- [x] Defining Functions
+- [x] Function Arguments and Return Values
 
 ### 4. **Lists and Tuples**
 - [ ] Lists: Creation, Methods (append, remove, etc.)
