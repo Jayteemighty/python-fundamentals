@@ -20,8 +20,8 @@ This repository is dedicated to refreshing my knowledge on Python. As I go throu
 - [x] Function Arguments and Return Values
 
 ### 4. **Lists and Tuples**
-- [ ] Lists: Creation, Methods (append, remove, etc.)
-- [ ] Tuples: Immutability, Indexing
+- [x] Lists: Creation, Methods (append, remove, etc.)
+- [x] Tuples: Immutability, Indexing
 
 ### 5. **Dictionaries**
 - [ ] Key-value pairs
