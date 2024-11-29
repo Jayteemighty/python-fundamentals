@@ -14,8 +14,21 @@ student = {"name": "Joshua", "age": 24, "wealthy": True, "Happy": True}
 print(student["name"]) # Output: Joshua
 print(student["wealthy"]) # Output: True
 
-# we could use .get() it help avoid errors incase the key does not expect
+# we could use .get() it help avoid errors incase the key does not exist
 print(student.get("Happy"))
 print(student.get("age"))
 
-# 3. 
+# 3. Adding, Updating and Deleting Items
+student = {"name": "Joshua", "age": 23, "wealthy": True, "deleted": "Yep", "popped": "Yeppy"}
+
+student["Happy"] = True  # Adding a new key-value pair
+
+student["age"] = 24  # Updating an existing key-value pair
+
+del student["deleted"]  # Delete a key-value pair
+
+popped = student.pop["popped"]  # Removes and returns the value of a key
+
+student.clear() # Removes all items from the dictionary
+
+print(student)
