@@ -27,8 +27,28 @@ student["age"] = 24  # Updating an existing key-value pair
 
 del student["deleted"]  # Delete a key-value pair
 
-popped = student.pop["popped"]  # Removes and returns the value of a key
+popped = student.pop("popped")  # Removes and returns the value of a key
 
 student.clear() # Removes all items from the dictionary
 
 print(student)
+
+# 4. Dictionary Methods
+student = {"name": "Alice", "age": 20, "grade": "A"}
+
+#dict.keys()    # Returns a view of all keys in the dictionary
+print(student.keys())
+
+#dict.values()  # Returns a view of all values in the dictionary
+print(student.values())
+
+#dict.items()   # Returns a view of all key-value pairs as tuples
+print(student.items())
+
+#dict.update()  # Updates the dictionary with key-value pairs from another dictionary
+student.update({"graduated": True, "grade": "A+"})
+print(student)
+
+#dict.copy()    # Creates a shallow copy of the dictionary
+student_copy = student.copy()
+print(student_copy)
