@@ -24,8 +24,8 @@ This repository is dedicated to refreshing my knowledge on Python. As I go throu
 - [x] Tuples: Immutability, Indexing
 
 ### 5. **Dictionaries**
-- [ ] Key-value pairs
-- [ ] Adding, Updating, and Deleting Entries
+- [x] Key-value pairs
+- [x] Adding, Updating, and Deleting Entries
 
 ### 6. **List Comprehensions**
 - [ ] Creating Lists Using Comprehensions

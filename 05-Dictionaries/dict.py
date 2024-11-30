@@ -52,3 +52,33 @@ print(student)
 #dict.copy()    # Creates a shallow copy of the dictionary
 student_copy = student.copy()
 print(student_copy)
+
+
+# 5. Iterating over a Dictionary
+student = {"name": "Alicia Keys", "age": 20, "grade": "A"}
+
+for key in student:
+    print(key)         # Iterating over keys
+
+for value in student.values():
+    print(value)       # Iterating over keys
+
+for key, value in student.items():
+    print(f"{key}: {value}")  # Iterating over key-value pairs
+
+
+# 6. Dictionary Comprehensions
+squares = {x: x**2 for x in range(1, 6)}
+print(squares)   # Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+even_squares = {x: x**2 for x in range(1, 6) if x % 2 == 0}
+print(even_squares) # Output: {2: 4, 4: 16}
+
+
+# 7. Nesting Dictionaries
+student = {
+    "Joshua": {"age": 24, "school": "UI"},
+    "Akala": {"age": 33, "school": "OAU PG"}
+}
+
+print(student["Joshua"]["school"])
