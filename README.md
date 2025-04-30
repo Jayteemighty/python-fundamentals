@@ -28,43 +28,43 @@ This repository is dedicated to refreshing my knowledge on Python. As I go throu
 - [x] Adding, Updating, and Deleting Entries
 
 ### 6. **List Comprehensions**
-- [ ] Creating Lists Using Comprehensions
+- [x] Creating Lists Using Comprehensions
 
 ### 7. **Classes and Objects (Object-Oriented Programming)**
-- [ ] Defining Classes
-- [ ] Constructor (`__init__`)
-- [ ] Methods and Attributes
+- [x] Defining Classes
+- [x] Constructor (`__init__`)
+- [x] Methods and Attributes
 
 ### 8. **File Handling**
-- [ ] Reading and Writing Files
-- [ ] Using `with` for File Handling
+- [x] Reading and Writing Files
+- [x] Using `with` for File Handling
 
 ### 9. **Error Handling (Exceptions)**
-- [ ] Try-Except Blocks
-- [ ] Handling Specific Exceptions
+- [x] Try-Except Blocks
+- [x] Handling Specific Exceptions
 
 ### 10. **Modules and Libraries**
-- [ ] Importing Built-in Modules (e.g., `math`, `datetime`)
-- [ ] Installing and Using Third-Party Libraries
+- [x] Importing Built-in Modules (e.g., `math`, `datetime`)
+- [x] Installing and Using Third-Party Libraries
 
 ### 11. **Lambda Functions**
-- [ ] Using Anonymous Functions (`lambda`)
+- [x] Using Anonymous Functions (`lambda`)
 
 ### 12. **Iterators and Generators**
-- [ ] Creating and Using Iterators
-- [ ] Generator Functions
+- [x] Creating and Using Iterators
+- [x] Generator Functions
 
 ### 13. **Decorators**
-- [ ] Function Decorators
+- [x] Function Decorators
 
 ### 14. **Regular Expressions (Regex)**
-- [ ] Pattern Matching with `re` Module
+- [x] Pattern Matching with `re` Module
 
 ### 15. **Collections Module**
-- [ ] `namedtuple`, `deque`, `Counter`, `OrderedDict`, `defaultdict`
+- [x] `namedtuple`, `deque`, `Counter`, `OrderedDict`, `defaultdict`
 
 ### 16. **Understanding Python Memory Management**
-- [ ] Understanding `id()`, `del`, and Garbage Collection
+- [x] Understanding `id()`, `del`, and Garbage Collection
 
 ---
 
