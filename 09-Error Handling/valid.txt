@@ -1,0 +1,2 @@
+This is a valid file for testing.
+Second line of content.
