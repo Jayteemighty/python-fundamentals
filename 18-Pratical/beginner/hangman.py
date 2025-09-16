@@ -22,7 +22,7 @@ def hangman_game():
                 display_word += letter + " "
             else:
                 display_word += "_"
-        print(f"\nWord: {display}")
+        print(f"\nWord: {display_word}")
         print(f"Guessed letters: {', '.join(sorted(guessed_letters))}")
         print(f"Incorrect guesses remaining: {max_incorrect_guesses - incorrect_guesses}")
         
@@ -45,7 +45,7 @@ def hangman_game():
             print("Correct!")
         else:
             print("Incorrect guess.")
-            incorrect_guess += 1
+            incorrect_guesses += 1
     else:
         print(f"\nGame Over! The word was '{secret_word}'.")
 
