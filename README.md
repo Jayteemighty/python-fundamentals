@@ -1,6 +1,6 @@
 # Python Basics Refresher
 
-This repository is dedicated to refreshing my knowledge on Python. As I go through the basics and essential concepts, I will commit my progress here in parts.
+This repository is dedicated to refreshing your knowledge on Python. As I go through the basics and essential concepts, I will commit my progress here in parts.
 
 ## Topics to Learn
 
