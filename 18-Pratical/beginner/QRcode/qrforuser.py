@@ -34,14 +34,12 @@ def create_qr_code():
     choice = input("Choose option (1-3, default: 1): ").strip() or "1"
     
     if choice == "1":
-        # Simple QR code
         img = qrcode.make(data)
         final_path = os.path.join(save_path, f"{filename}.png")
         img.save(final_path)
         print(f"QR code saved as: {final_path}")
         
     elif choice == "2":
-        # Custom colors
         fill_color = input("Enter fill color (default: black): ").strip() or "black"
         back_color = input("Enter background color (default: white): ").strip() or "white"
         
@@ -55,7 +53,6 @@ def create_qr_code():
         print(f"Colored QR code saved as: {final_path}")
         
     elif choice == "3":
-        # Advanced settings
         try:
             version = int(input("QR version (1-40, default: 1): ").strip() or "1")
             box_size = int(input("Box size (default: 10): ").strip() or "10")

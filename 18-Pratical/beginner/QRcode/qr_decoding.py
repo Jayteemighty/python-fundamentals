@@ -1,5 +1,4 @@
-from pyzbar.pyzbar import decode
-from PIL import Image
+import cv2
 import os
 
 def decode_qr_code(image_path):
@@ -9,34 +8,49 @@ def decode_qr_code(image_path):
             print(f"Error: File '{image_path}' not found.")
             return None
         
-        # Open and decode the image
-        img = Image.open(image_path)
-        result = decode(img)
+        # Read the image
+        img = cv2.imread(image_path)
         
-        # Process the results
-        if result:
-            print("QR Code(s) detected:")
-            for i, decoded_data in enumerate(result):
-                print(f"QR Code {i+1}:")
-                print(f"  Data: {decoded_data.data.decode('utf-8')}")
-                print(f"  Type: {decoded_data.type}")
-                print(f"  Quality: {len(decoded_data.polygon)} points detected")
+        if img is None:
+            print(f"Error: Could not read image from '{image_path}'")
+            return None
+        
+        # Initialize QR code detector
+        detector = cv2.QRCodeDetector()
+        
+        # Detect and decode QR code
+        data, vertices_array, binary_qrcode = detector.detectAndDecode(img)
+        
+        if vertices_array is not None:
+            print("QR Code successfully decoded!")
+            print(f"Data: {data}")
+            
+            # Optional: Draw bounding box around QR code (for visualization)
+            if len(vertices_array) > 0:
+                print(f"QR code position detected in image")
+            
+            return data
         else:
-            print("No QR codes found in the image.")
+            print("No QR code found in the image.")
             return None
             
-        return result
-        
     except Exception as e:
         print(f"Error decoding QR code: {e}")
         return None
 
-# Example usage
 if __name__ == "__main__":
-    # You can change this path to your QR code image
+    # Specify the path to your QR code image
     image_path = 'C:/Users/JAYTEE/Pictures/qrcode.png'
     
-    # Alternative: ask user for image path
-    # image_path = input("Enter the path to your QR code image: ")
+    # Alternative: Ask user for image path
+    # image_path = input("Enter the path to your QR code image: ").strip()
+    
+    print("QR Code Decoder")
+    print("=" * 30)
     
     result = decode_qr_code(image_path)
+    
+    if result:
+        print(f"\n Decoding successful!")
+    else:
+        print(f"\n Could not decode QR code.")
