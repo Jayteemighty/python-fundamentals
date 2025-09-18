@@ -68,7 +68,7 @@ def play_game():
         
         if winner:
             print_board(board)
-            print(f"🎉 Player {winner} wins! 🎉")  # Celebration message!
+            print(f"Player {winner} wins!")  # Celebration message!
             break
         
         if  is_board_dull(board):
